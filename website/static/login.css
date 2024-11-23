@@ -289,12 +289,12 @@ body {
 }
 
 .success {
-    background-color: #646F58;
+    background-color: #29BF12;
     color: #fff;
 }
 
 .error {
-    background-color: #590004;
+    background-color: #A54657;
     color: #fff;
 }
 
