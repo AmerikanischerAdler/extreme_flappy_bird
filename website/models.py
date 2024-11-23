@@ -12,3 +12,10 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(100), unique=True)
     password = db.Column(db.String(100))
 
+    # Override get_id to take user_id instead of id 
+    def get_id(self):
+        return str(self.user_id)  
+
+    def __repr__(self):
+        return f'<User {self.username}>'
+
